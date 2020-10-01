@@ -15,10 +15,12 @@ public class MainActivity extends AppCompatActivity {
         EditText simpleEditText = (EditText) findViewById(R.id.editText);
         String editTextValue = simpleEditText.getText().toString();
         int colourNum = Integer.parseInt(editTextValue);
-        if (colourNum >= 8 && colourNum <= 12)
-            Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
-
-
+//         if (colourNum >= 8 && colourNum <= 12)
+        if (colourNum >= 8){
+            if(colourNum <= 12){
+                Toast.makeText(getApplicationContext(), "Correct", Toast.LENGTH_SHORT).show();
+            }
+        }
     }
 
 }
